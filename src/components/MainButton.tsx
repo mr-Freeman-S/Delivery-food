@@ -12,7 +12,7 @@ interface ButtonProps {
     onPress: () => void
 }
 
-export const Button = ({textButton,colorText,backgroundColor,onPress}:ButtonProps) => {
+export const MainButton = ({textButton,colorText,backgroundColor,onPress}:ButtonProps) => {
     return (
         <TouchableOpacity style={{...style.container, backgroundColor:`${backgroundColor}`}}  onPress={onPress}>
             <Text style={{...style.text, color:`${colorText}`}}>
