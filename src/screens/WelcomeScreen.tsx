@@ -27,7 +27,6 @@ export const WelcomeScreen = () => {
                     <LinearGradient start={{x:0,y:0.1}} end={{x:0,y:0.4}} colors={['rgba(255, 71, 11, 0.1)','#FF470B']} style={styles.gradientFigureLeft}/>
                 </View>
             </View>
-
             <MainButton textButton={'Get started'} colorText={'#FF4B3A'} backgroundColor={'#ffffff'} onPress={() => {
             }}/>
         </View>
@@ -39,7 +38,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         backgroundColor: '#FF4B3A',
         width: WIDTH,
-        height: HEIGHT
+        height: HEIGHT,
+        paddingVertical:30
     },
     logoWrapper: {
         justifyContent: 'center',
