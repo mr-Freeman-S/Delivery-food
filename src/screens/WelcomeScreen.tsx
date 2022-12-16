@@ -24,7 +24,8 @@ export const WelcomeScreen = () => {
                 <View style={styles.imagesWrapper}>
                     <Image style={styles.woman} source={require('./../assets/images/woman.png')}/>
                     <Image style={styles.man} source={require('./../assets/images/man.png')}/>
-                    <LinearGradient start={{x:0,y:0.1}} end={{x:0,y:0.4}} colors={['rgba(255, 71, 11, 0.1)','#FF470B']} style={styles.gradientFigureLeft}/>
+                    <LinearGradient start={{x: 0, y: 0.1}} end={{x: 0, y: 0.4}}
+                                    colors={['rgba(255, 71, 11, 0.1)', '#FF470B']} style={styles.gradientFigureLeft}/>
                 </View>
             </View>
             <MainButton textButton={'Get started'} colorText={'#FF4B3A'} backgroundColor={'#ffffff'} onPress={() => {
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#FF4B3A',
         width: WIDTH,
         height: HEIGHT,
-        paddingVertical:30
+        paddingVertical: 30
     },
     logoWrapper: {
         justifyContent: 'center',
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
         letterSpacing: -0.03
     },
     imagesWrapper: {
-        position:'relative'
+        position: 'relative'
     },
     woman: {
         position: "absolute",
@@ -89,15 +90,14 @@ const styles = StyleSheet.create({
         width: WIDTH,
         height: 200,
         top: 300,
-        opacity:0.85
+        opacity: 0.85
     },
     gradientFigureRight: {
         position: "absolute",
         width: 300,
         height: 200,
         top: 300,
-        right:0,
+        right: 0,
     }
-
 })
 
